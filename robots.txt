@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: site:web-developer-rudraa.github.io/rudraa-portfolio-/sitemap.xml
