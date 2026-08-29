@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://web-developer-rudraa.github.io/rudraa-portfolio-/sitemap.xml
+Sitemap: https://web-developer-rudraa.github.io/Rudraa-portfolio-/sitemap.xml
