@@ -343,7 +343,66 @@
             margin-left: 10px;
             animation: bounce 1.5s infinite;
         }
+/* =========================
+   3D ANIMATED SERVICE
+========================= */
 
+.service-3d {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+/* Animated background glow */
+
+.service-3d::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    filter: blur(45px);
+    right: -70px;
+    bottom: -70px;
+    z-index: -1;
+    transition: 0.6s ease;
+}
+
+.service-3d:hover::after {
+    width: 260px;
+    height: 260px;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+/* 3D icon */
+
+.service-3d .service-icon {
+    transition: 0.5s ease;
+}
+
+.service-3d:hover .service-icon {
+    transform: rotateY(180deg) scale(1.1);
+}
+
+/* Badge */
+
+.service-badge {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 7px 12px;
+    border: 1px solid rgba(255,255,255,0.18);
+    color: #777;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: 0.4s ease;
+}
+
+.service-3d:hover .service-badge {
+    color: #fff;
+    border-color: #555;
+}
 
         /* =========================
            SECTION HEADINGS
@@ -1280,7 +1339,7 @@
 
         <div class="row g-4 mt-3">
 
-            <div class="col-md-6 col-lg-3 reveal">
+            <div class="col-md-6 col-lg-4 reveal">
 
                 <div class="service-card">
 
@@ -1300,7 +1359,7 @@
             </div>
 
 
-            <div class="col-md-6 col-lg-3 reveal">
+         <div class="col-md-6 col-lg-4 reveal">
 
                 <div class="service-card">
 
@@ -1320,7 +1379,7 @@
             </div>
 
 
-            <div class="col-md-6 col-lg-3 reveal">
+            <div class="col-md-6 col-lg-4 reveal">
 
                 <div class="service-card">
 
@@ -1340,7 +1399,7 @@
             </div>
 
 
-            <div class="col-md-6 col-lg-3 reveal">
+           <div class="col-md-6 col-lg-4 reveal">
 
                 <div class="service-card">
 
@@ -1364,6 +1423,30 @@
     </div>
 
 </section>
+    <!-- 3D & HEAVY ANIMATED WEBSITES -->
+<div class="col-md-6 col-lg-4 reveal">
+
+    <div class="service-card service-3d">
+
+        <div class="service-icon">
+            <i class="bi bi-box"></i>
+        </div>
+
+        <h3>3D & Heavy Animated Websites</h3>
+
+        <p>
+            Immersive websites featuring 3D visuals, advanced animations,
+            smooth transitions and interactive experiences designed to
+            create a premium digital presence.
+        </p>
+
+        <div class="service-badge">
+            3D • Motion • Interactive
+        </div>
+
+    </div>
+
+</div>
 
 
 
