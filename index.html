@@ -343,66 +343,6 @@
             margin-left: 10px;
             animation: bounce 1.5s infinite;
         }
-/* =========================
-   3D ANIMATED SERVICE
-========================= */
-
-.service-3d {
-    position: relative;
-    isolation: isolate;
-    overflow: hidden;
-}
-
-/* Animated background glow */
-
-.service-3d::after {
-    content: "";
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.06);
-    filter: blur(45px);
-    right: -70px;
-    bottom: -70px;
-    z-index: -1;
-    transition: 0.6s ease;
-}
-
-.service-3d:hover::after {
-    width: 260px;
-    height: 260px;
-    background: rgba(255, 255, 255, 0.10);
-}
-
-/* 3D icon */
-
-.service-3d .service-icon {
-    transition: 0.5s ease;
-}
-
-.service-3d:hover .service-icon {
-    transform: rotateY(180deg) scale(1.1);
-}
-
-/* Badge */
-
-.service-badge {
-    display: inline-block;
-    margin-top: 18px;
-    padding: 7px 12px;
-    border: 1px solid rgba(255,255,255,0.18);
-    color: #777;
-    font-size: 10px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    transition: 0.4s ease;
-}
-
-.service-3d:hover .service-badge {
-    color: #fff;
-    border-color: #555;
-}
 
         /* =========================
            SECTION HEADINGS
@@ -988,7 +928,43 @@
             }
 
         }
+    /* =========================
+   PREMIUM ROTATING TEXT
+========================= */
 
+#rotatingText {
+    display: inline-block;
+    position: relative;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(16px, 2vw, 22px);
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+  background: linear-gradient(
+    90deg,
+    #777,
+    #fff,
+    #aaa,
+    #fff,
+    #777
+);
+
+background-size: 250% auto;
+
+background-clip: text;
+-webkit-background-clip: text;
+
+-webkit-text-fill-color: transparent;
+
+animation: premiumShine 5s linear infinite;
+
+text-shadow:
+    0 0 18px rgba(255,255,255,0.08);
+
+min-height: 28px;
+}
     </style>
 </head>
 
@@ -1070,9 +1046,9 @@
 
         <div class="hero-content">
 
-            <div class="hero-small">
-                Web Developer & Designer
-            </div>
+           <div class="hero-small">
+    <span id="rotatingText"></span>
+</div>
 
             <h1 class="hero-title">
                 I BUILD<br>
@@ -1339,7 +1315,7 @@
 
         <div class="row g-4 mt-3">
 
-            <div class="col-md-6 col-lg-4 reveal">
+            <div class="col-md-6 col-lg-3 reveal">
 
                 <div class="service-card">
 
@@ -1359,7 +1335,7 @@
             </div>
 
 
-         <div class="col-md-6 col-lg-4 reveal">
+         <div class="col-md-6 col-lg-3 reveal">
 
                 <div class="service-card">
 
@@ -1379,7 +1355,7 @@
             </div>
 
 
-            <div class="col-md-6 col-lg-4 reveal">
+            <div class="col-md-6 col-lg-3 reveal">
 
                 <div class="service-card">
 
@@ -1399,7 +1375,7 @@
             </div>
 
 
-           <div class="col-md-6 col-lg-4 reveal">
+           <div class="col-md-6 col-lg-3 reveal">
 
                 <div class="service-card">
 
@@ -1419,36 +1395,105 @@
             </div>
 
         </div>
+  
+              <div class="col-md-6 col-lg-3 reveal">
+                <div class="service-card">
 
-    </div>
+                      <div class="service-icon">
+                        <i class="bi bi-lightning-charge"></i>
+                    </div>
 
-</section>
-    <!-- 3D & HEAVY ANIMATED WEBSITES -->
-<div class="col-md-6 col-lg-4 reveal">
-
-    <div class="service-card service-3d">
-
-        <div class="service-icon">
-            <i class="bi bi-box"></i>
-        </div>
-
-        <h3>3D & Heavy Animated Websites</h3>
+                        <h3>3D & Heavy Animated Websites</h3>
 
         <p>
             Immersive websites featuring 3D visuals, advanced animations,
-            smooth transitions and interactive experiences designed to
-            create a premium digital presence.
+            smooth transitions and interactive experiences.
         </p>
 
         <div class="service-badge">
             3D • Motion • Interactive
+            </div>
+        </div>
+         </div>
+
+
+
+                <div class="col-md-6 col-lg-3 reveal">
+           <div class="service-card">
+
+        <div class="service-icon">
+            <i class="bi bi-arrow-repeat"></i>
+        </div>
+
+        <h3>Website Redesign</h3>
+
+        <p>
+            Transforming outdated websites into modern, premium
+            and responsive digital experiences with improved design
+            and user experience.
+        </p>
+
+        <div class="service-badge">
+         Premium • Responsive
         </div>
 
     </div>
 
 </div>
 
+<div class="col-md-6 col-lg-3 reveal">
 
+    <div class="service-card">
+
+        <div class="service-icon">
+            <i class="bi bi-search"></i>
+        </div>
+
+        <h3>SEO-Friendly Websites</h3>
+
+        <p>
+            Building search-engine-friendly websites with optimized
+            structure, metadata and content.  Designed to improve visibility
+             and help your website get discovered online.
+        </p>
+
+        <div class="service-badge">
+            SEO • Visibility • Optimized
+        </div>
+
+    </div>
+
+</div>
+   
+
+<div class="col-md-6 col-lg-3 reveal">
+
+ <div class="service-card">
+
+        <div class="service-icon">
+            <i class="bi bi-cart3"></i>
+        </div>
+
+        <h3>E-Commerce Websites</h3>
+
+        <p>
+           Online stores with beautiful product layouts,
+    responsive designs and smooth shopping experience.
+    Built to showcase products and turn visitors into customers.
+        </p>
+
+        <div class="service-badge">
+            Store • Products • Responsive
+        </div>
+ </div>
+    </div>
+
+</div>
+
+
+    </div>
+
+</section>
 
 <!-- =========================
      PROJECTS
@@ -2174,6 +2219,73 @@
             });
 
         });
+/* =========================
+   ROTATING HERO TEXT
+========================= */
+
+const rotatingText = document.getElementById("rotatingText");
+
+const texts = [
+    "IMMERSIVE 3D EXPERIENCES.",
+    "ELEVATED UI / UX DESIGN.",
+    "PREMIUM E-COMMERCE EXPERIENCES.",
+    "SEAMLESS DIGITAL INTERACTIONS.",
+    "ADVANCED MOTION & ANIMATION.",
+    "MODERN WEBSITE TRANSFORMATIONS.",
+    "SEO-READY DIGITAL EXPERIENCES."
+];
+
+let textIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+function typeText() {
+
+    const currentText = texts[textIndex];
+
+    if (!deleting) {
+
+        rotatingText.textContent =
+            currentText.substring(0, charIndex + 1);
+
+        charIndex++;
+
+        if (charIndex === currentText.length) {
+
+            deleting = true;
+
+            setTimeout(typeText, 1800);
+            return;
+        }
+
+        setTimeout(typeText, 70);
+
+    } else {
+
+        rotatingText.textContent =
+            currentText.substring(0, charIndex - 1);
+
+        charIndex--;
+
+        if (charIndex === 0) {
+
+            deleting = false;
+
+            textIndex++;
+
+            if (textIndex === texts.length) {
+                textIndex = 0;
+            }
+
+            setTimeout(typeText, 400);
+            return;
+        }
+
+        setTimeout(typeText, 40);
+    }
+}
+
+typeText();
 
 
 </script>
