@@ -9,8 +9,6 @@
 <meta name="description"
       content="Rudra is a Web Developer & Designer dedicated to transforming ideas into beautiful, responsive, and user-friendly websites. I combine modern technologies, creative design, and attention to detail to create digital experiences that truly stand out.">
 
-<meta name="keywords"
-      content="Rudraa web developer, Rudraa web designer, web developer, web designer, website developer, website designer, frontend developer, 3D website developer, animated website developer, responsive website development, modern website design, HTML CSS JavaScript, Bootstrap">
 
 <meta property="og:title" content="Rudraa | Web Developer & Designer">
 <meta property="og:site_name" content="Rudraa | Web Developer & Designer">
@@ -32,9 +30,26 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "Person",
   "name": "Rudraa",
-  "url": "https://www.webdeveloperrudra.com/"
+  "url": "https://www.webdeveloperrudra.com/",
+  "jobTitle": "Web Developer & Web Designer",
+  "description": "Rudraa is a Web Developer and Web Designer who creates modern, responsive and premium websites with clean code, creative design and smooth user experiences.",
+  "image": "https://www.webdeveloperrudra.com/Officiallogo.png",
+  "knowsAbout": [
+    "Web Development",
+    "Web Design",
+    "Frontend Development",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Bootstrap",
+    "UI/UX Design",
+    "3D Website Development",
+    "Website Animation",
+    "SEO-Friendly Websites",
+    "E-Commerce Website Development"
+  ]
 }
 </script>
     <!-- Bootstrap -->
@@ -64,6 +79,41 @@
 
 
     <style>
+
+        /* CTA */
+.cta-section {
+    padding: 90px 20px;
+    background: #111;
+    color: #fff;
+}
+
+.cta-section p {
+    color: #bbb;
+}
+
+.cta-section h2 {
+    font-size: clamp(32px, 5vw, 55px);
+    margin: 15px 0 20px;
+    font-weight: 600;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 13px 30px;
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    background: #ddd;
+}
+     
+
 
         /* =========================
            GLOBAL
@@ -975,6 +1025,152 @@ min-height: 28px;
         background-position: 250% center;
     }
 }
+        /* What's NextSection */
+
+.what-next-section {
+    padding: 80px 20px;
+    background: #f7f7f7;
+}
+
+.compass-icon {
+    color:black ;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.next-subtitle {
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.what-next-section h2 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.next-text {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #666;
+    line-height: 1.7;
+}
+
+.what-next-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.what-next-btn:hover {
+    transform: translateY(-3px);
+    background: #333;
+}
+
+.next-features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+
+        .since-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 18px 0 25px;
+    opacity: 0;
+    animation: sinceReveal 1s ease forwards;
+    animation-delay: 0.8s;
+}
+
+
+
+.since-text {
+    position: relative;
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    color: #777;
+    white-space: nowrap;
+}
+
+.since-text strong {
+    color: grey;
+    font-weight: 700;
+}
+
+.since-line {
+    width: 45px;
+    height: 1px;
+    background: #111;
+    transform: scaleX(0);
+    transform-origin: center;
+    animation: lineReveal 1s ease forwards;
+    animation-delay: 1.2s;
+}
+
+@keyframes sinceReveal {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes lineReveal {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.since-badge:hover .since-text {
+    letter-spacing: 5px;
+    transition: 0.4s ease;
+}
+
+.since-badge:hover .since-line {
+    width: 60px;
+    transition: 0.4s ease;
+}
+        @media (max-width: 576px) {
+    .since-badge {
+        gap: 10px;
+        margin: 15px 0 20px;
+    }
+
+    .since-line {
+        width: 30px;
+    }
+
+    .since-text {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+}
+
+@media (max-width: 576px) {
+    .next-features {
+        gap: 20px;
+    }
+}
     </style>
 </head>
 
@@ -998,7 +1194,7 @@ min-height: 28px;
     <div class="container">
 
         <a class="navbar-brand" href="#home">
-            Rudraa Web Developer<span></span>
+            Rudraa Web Developer
         </a>
 
         <button
@@ -1059,7 +1255,15 @@ min-height: 28px;
            <div class="hero-small">
     <span id="rotatingText"></span>
 </div>
+<div class="since-badge">
+    <span class="since-line"></span>
 
+    <span class="since-text">
+        SINCE <strong>2025</strong>
+    </span>
+
+    <span class="since-line"></span>
+</div>
             <h1 class="hero-title">
                 I BUILD<br>
                 <span class="outline">DIGITAL</span><br>
@@ -1194,9 +1398,6 @@ min-height: 28px;
     </div>
 
 </section>
-
-
-
 <!-- =========================
      SKILLS
 ========================= -->
@@ -1691,7 +1892,7 @@ min-height: 28px;
 
             <div class="col-6 col-lg-3">
                 <div class="stat">
-                    <h2 class="counter" data-target="108">0</h2>
+                    <h2 class="counter" data-target="52">0</h2>
                     <p>Projects</p>
                 </div>
                 
@@ -1723,9 +1924,77 @@ min-height: 28px;
     </div>
 
 </section>
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container text-center">
+        <p class="text-uppercase mb-2">Let's Work Together</p>
+
+        <h2>
+            Have a project in mind?
+            <br>
+            Let's build something great.
+        </h2>
+
+        <p>
+            I'm ready to turn your ideas into a modern and professional website.
+        </p>
+
+        <a href="#contact" class="cta-btn">
+            Start a Project
+        </a>
+    </div>
+</section>
+
+<!-- What's Next Section -->
+<section class="what-next-section">
+<div class="container text-center">
+
+    <div class="compass-icon">
+        <i class="bi bi-compass"></i>
+    </div>
+
+    <p class="next-subtitle">
+        WHAT'S NEXT?
+    </p>
+
+    <h2 style="color: black;">
+        Explore.<br>
+        <span>Experiment. Evolve.</span>
+    </h2>
+
+    <p class="next-text">
+        Always learning, always creating, and always looking
+        for new ways to push the boundaries of the web.
+    </p>
+
+    <div class="next-features">
+
+        <span style="color: grey;">
+            <i class="bi bi-lightning-charge" style="color: grey;"></i>
+            New Technologies
+        </span>
+
+        <span style="color: grey;">
+            <i class="bi bi-boxes" style="color: grey;"></i>
+            Creative Experiments
+        </span>
+
+        <span style="color: grey;">
+            <i class="bi bi-graph-up-arrow" style="color: black;"></i>
+            Constant Growth
+        </span>
+
+    </div>
+<br>
+    <a href="#projects" class="what-next-btn">
+        Explore My Work
+        <i class="bi bi-arrow-up-right"></i>
+    </a>
+
+</div>
 
 
-
+</section>
 <!-- =========================
      CONTACT
 ========================= -->
@@ -1852,7 +2121,7 @@ min-height: 28px;
             <div class="col-md-6">
 
                 <div class="footer-logo">
-                    RUDRAA
+                    Rudraa
                 </div>
 
                 <div class="footer-text mt-2">
