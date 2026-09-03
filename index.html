@@ -24,7 +24,7 @@
       href="https://www.webdeveloperrudra.com/">
 
 <link rel="icon"
-      type="image/png"
+      type="image/png"  
       href="Officiallogo.png">
 
 <script type="application/ld+json">
@@ -129,6 +129,8 @@
             scroll-behavior: smooth;
         }
 
+      
+
         .loader {
     position: fixed;
     inset: 0;
@@ -147,6 +149,45 @@
 
     animation: hideLoader 1s ease 2s forwards;
 }
+
+.glow-text {
+    background: linear-gradient(
+        90deg,
+        #7cff00,
+        #00ffd5,
+        #00b7ff,
+        #7b61ff,
+        #00ffd5,
+        #7cff00
+    );
+
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+   text-shadow:
+    0 0 5px rgba(0, 255, 200, 0.35),
+    0 0 15px rgba(0, 220, 255, 0.25),
+    0 0 30px rgba(0, 220, 255, 0.15),
+    0 0 50px rgba(120, 255, 0, 0.10);
+    animation: glowMove 5s ease-in-out infinite;
+}
+
+@keyframes glowMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 .loader h1 {
     width: 100%;
@@ -349,6 +390,8 @@
             flex-wrap: wrap;
         }
 
+
+
         .btn-main {
             background: #fff;
             color: #000;
@@ -417,10 +460,34 @@
             margin-bottom: 20px;
         }
 
-        .section-title span {
-            color: #777;
-        }
+      .section-title span {
+    background: linear-gradient(
+        110deg,
+        #8b5cf6 0%,
+        #ec4899 35%,
+        #ffffff 50%,
+        #f97316 65%,
+        #8b5cf6 100%
+    );
+    background-size: 250% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 
+    animation: aboutReflection 4s ease-in-out infinite;
+}
+
+@keyframes aboutReflection {
+    0% {
+        background-position: 100% center;
+    }
+    50% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 100% center;
+    }
+}
         .section-text {
             color: #888;
             line-height: 1.8;
@@ -1265,9 +1332,9 @@ min-height: 28px;
     <span class="since-line"></span>
 </div>
             <h1 class="hero-title">
-                I BUILD<br>
+              <span class="glow-text">  I BUILD<br>
                 <span class="outline">DIGITAL</span><br>
-                EXPERIENCES.
+                EXPERIENCES.</span>
             </h1>
 
             <p class="hero-description">
@@ -1415,7 +1482,7 @@ min-height: 28px;
                 </div>
 
                 <h2 class="section-title">
-                    My <span>toolbox.</span>
+                    My <span>toolbox ~</span>
                 </h2>
 
                 <p class="section-text">
@@ -1520,7 +1587,7 @@ min-height: 28px;
         </div>
 
         <h2 class="section-title reveal">
-            What I <span>do.</span>
+         What I <span>Specialize In ~</span>
         </h2>
 
 
@@ -1711,7 +1778,7 @@ min-height: 28px;
         </div>
 
         <h2 class="section-title reveal">
-            Featured <span>projects.</span>
+            Featured <span>projects ~</span>
         </h2>
 
 
@@ -1804,7 +1871,7 @@ min-height: 28px;
                 </div>
 
                 <h2 class="section-title">
-                    My <span>journey.</span>
+                    My <span>journey ~</span>
                 </h2>
 
             </div>
